@@ -31,13 +31,13 @@ config.server = {
   host: 'localhost',
   // The port where the STH server will be listening.
   // Default value: "8666".
-  port: '8666',
+  port: '8667',
   // The service to be used if not sent by the Orion Context Broker in the notifications.
   // Default value: "testservice".
-  defaultService: 'testservice',
+  defaultService: 'graziot',
   // The service path to be used if not sent by the Orion Context Broker in the notifications.
   // Default value: "/testservicepath".
-  defaultServicePath: '/testservicepath',
+  defaultServicePath: '/',
   // A flag indicating if the empty results should be removed from the response.
   // Default value: "true".
   filterOutEmpty: 'true',
@@ -130,7 +130,7 @@ config.database = {
   // 4. Collection names starting with 'system.' will be encoded as 'xsystem.'. For instance, system.myData will be
   //    encoded as xsystem.myData.
   // Default value: "true" (although we will set it to false until the Cygnus counterpart is ready and landed)
-  nameEncoding: 'false'
+  nameEncoding: 'true'
 };
 
 // Logging configuration
