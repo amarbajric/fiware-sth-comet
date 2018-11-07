@@ -65,7 +65,7 @@ RUN yum update -y && yum install -y curl \
   # We use /bin/cp instead of cp to avoid any alias substitution, which in some cases has been problematic
   && /bin/cp -f /usr/lib/locale/locale-archive /usr/lib/locale/locale-archive.tmpl \
   && build-locale-archive \
-  # Clean npm cache
+  # Verify npm cache
   && npm cache verify \
   # Don't need unused files inside docker images
   && rm -rf /tmp/* /usr/local/lib/node_modules/npm/man /usr/local/lib/node_modules/npm/doc /usr/local/lib/node_modules/npm/html \
