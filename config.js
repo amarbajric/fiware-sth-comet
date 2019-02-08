@@ -31,7 +31,7 @@ config.server = {
   host: 'localhost',
   // The port where the STH server will be listening.
   // Default value: "8666".
-  port: '8667',
+  port: '8666',
   // The service to be used if not sent by the Orion Context Broker in the notifications.
   // Default value: "testservice".
   defaultService: 'graziot',
@@ -48,7 +48,7 @@ config.server = {
   // Default value: "temp".
   temporalDir: 'temp',
   // Max page size returned by a query
-  maxPageSize: '100'
+  maxPageSize: '1000'
 };
 
 // Database configuration
@@ -66,7 +66,7 @@ config.database = {
   password: '',
   // The URI to use for the database connection. It supports replica set URIs. This does not
   // include the "mongo://" protocol part. Default value: "localhost:27017"
-  URI: 'localhost:27017',
+  URI: '192.168.99.100:31017',
   // The name of the replica set to connect to, if any. Default value: "".
   replicaSet: '',
   // The prefix to be added to the service for the creation of the databases. Default value: "sth".
